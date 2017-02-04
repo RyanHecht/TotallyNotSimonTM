@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.ryanhecht.memorygame.GameActivity"
+    android:rowCount="44"
+    android:columnCount="4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/score"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textSize="30dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="0"
+        android:gravity="left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:id="@+id/scorelbl"
+        android:autoText="false"
+        android:textSize="40dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="1" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="G"
+        android:id="@+id/bg"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="1"
+        android:background="#00ff00"
+        android:backgroundTintMode="multiply"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="R"
+        android:id="@+id/br"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="left"
+        android:layout_rowSpan="1"
+        android:background="#ff0000"
+        android:backgroundTintMode="multiply"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="Y"
+        android:id="@+id/by"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:background="#ffff00"
+        android:backgroundTintMode="multiply"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="B"
+        android:id="@+id/bb"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:background="#0000ff"
+        android:backgroundTintMode="multiply"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="High Score:"
+        android:id="@+id/highscore"
+        android:layout_row="38"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="197dp"
+        android:layout_height="185dp"
+        android:text="New Game"
+        android:id="@+id/go"
+        android:layout_row="43"
+        android:layout_column="1"
+        android:onClick="game" />
+
+</GridLayout>
